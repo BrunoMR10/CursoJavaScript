@@ -28,9 +28,6 @@ const miModulo=(() => {
         btnPedir.disabled = false;
         btnDetener.disabled = false;
     }
-
-
-
     btnPedir.addEventListener('click', () => {
 
         const carta = pedirCarta(deck);
@@ -51,7 +48,6 @@ const miModulo=(() => {
 
     });
 
-
     btnDetener.addEventListener('click', () => {
         btnPedir.disabled   = true;
         btnDetener.disabled = true;
@@ -59,9 +55,7 @@ const miModulo=(() => {
     });
 
     btnNuevo.addEventListener('click', () => {
-
         InicializarJuego();
-
     });
     return {nuevoJuego:InicializarJuego};
 
