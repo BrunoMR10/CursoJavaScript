@@ -1,11 +1,11 @@
 import _ from 'underscore';
 /**
- * 
- * @param {Array} tiposDeCartas 
- * @param {Array} tiposEspeciales 
- * @returns {Array}
+ * Esta funcion crea un nuevo deck
+ * @param {Array<String>} tiposDeCartas 
+ * @param {Array<String>} tiposEspeciales 
+ * @returns {Array<String>}
  */
-const crearDeck = (tiposDeCartas,tiposEspeciales) => {
+export const crearDeck = (tiposDeCartas,tiposEspeciales) => {
     if (!tiposDeCartas) throw new Error('Tipos de carta es obligatorio')
     if (!tiposEspeciales) throw new Error('Tipos de carta especiales es obligatorio')
 
